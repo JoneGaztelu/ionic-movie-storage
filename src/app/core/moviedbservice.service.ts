@@ -7,7 +7,7 @@ import { calcPossibleSecurityContexts } from '@angular/compiler/src/template_par
   providedIn: 'root'
 })
 
-export class MoviedbService {
+export class MoviedbserviceService {
   auxMovie: IMovie;
   auxMovieList: IMovie[] = [];
 

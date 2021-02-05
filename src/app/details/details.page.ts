@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MoviedbService } from '../core/moviedbservice.service';
+import { MoviedbserviceService } from '../core/moviedbservice.service';
 import { IMovie } from '../share/interfaces';
 import { ToastController } from '@ionic/angular';
 
@@ -17,7 +17,7 @@ export class DetailsPage implements OnInit {
   constructor(
     private activatedrouter: ActivatedRoute,
     private router: Router,
-    private moviedbService: MoviedbService,
+    private moviedbService: MoviedbserviceService,
     public toastController: ToastController
   ) { }
 

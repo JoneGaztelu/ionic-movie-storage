@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { MoviedbService } from '../core/moviedbservice.service';
+import { MoviedbserviceService } from '../core/moviedbservice.service';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { IMovie } from '../share/interfaces';
@@ -16,7 +16,7 @@ export class CreatePage implements OnInit {
 
   constructor(
     private router: Router,
-    private moviedbService: MoviedbService,
+    private moviedbService: MoviedbserviceService,
     public toastController: ToastController
   ) { }
 

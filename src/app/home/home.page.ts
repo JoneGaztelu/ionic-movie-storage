@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IMovie } from '../share/interfaces';
-import { MoviedbService } from '../core/moviedbservice.service';
+import { MoviedbserviceService } from '../core/moviedbservice.service';
 import { Router } from '@angular/router';
 import { DetailsPage } from '../details/details.page';
 
@@ -29,7 +29,7 @@ export class HomePage implements OnInit {
       description: "Kill Bill es una película de acción y suspenso estadounidense de dos partes estrenada en 2003 y 2004 respectivamente, que fue escrita y dirigida por Quentin Tarantino. Kill Bill originalmente fue propuesta para tener un lanzamiento único en los cines, pero con una duración de más de cuatro horas, fue separada en dos volúmenes: Kill Bill: Volumen 1, lanzada a finales de 2003, y Kill Bill: Volumen 2, lanzada a inicios de 2004. Las dos películas fueron bien recibidas por la crítica, muchos notando su estilo de dirección y su homenaje a géneros cinematográficos como las películas de artes marciales hongkonesa, las películas de samuráis, spaghetti western, chicas con armas y venganza."
     }
   ]
-  constructor(private moviedbService: MoviedbService, private route: Router) { }
+  constructor(private moviedbService: MoviedbserviceService, private route: Router) { }
   ngOnInit(): void {
     // If the database is empty set initial values
     this.inicialization();
